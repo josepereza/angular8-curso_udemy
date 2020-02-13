@@ -41,6 +41,7 @@ This is the simplest method to install a specific version of Node.js. You can qu
 ```
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 ```
+If you need to install any other version, change the version number. For example 12.x, 10.x.
 * install Node.js on Ubuntu
 ```
 sudo apt-get install -y nodejs
