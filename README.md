@@ -53,7 +53,7 @@ Install
 
     if you don’t have a current Angular installation in your environment, use below command to install exactly Angular 9 using npm.
 
-$ npm install --global @angular/cli@9.0.0-rc.14
+$ npm install --global @angular/cli@9.0.2
 
     The above command will install angular 9.0.0-rc.14 which is the latest version at the time of writing. But to make sure you have the latest Angular release version in the future, run the below command too.
 
