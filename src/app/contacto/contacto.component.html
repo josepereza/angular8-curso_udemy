@@ -1,0 +1,18 @@
+<p>contacto works!</p>
+
+
+<form #formContacto="ngForm" (ngSubmit)="onSubmit()">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre">
+
+    <label for="apellidos">apellidos</label>
+    <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="usuario.apellidos">
+
+    <label for="email">email</label>
+    <input type="text" name="email" #email="ngModel" [(ngModel)]="usuario.email">
+
+    <label for="mensaje">mensaje</label>
+    <input type="text" name="mensaje" #mensaje="ngModel" [(ngModel)]="usuario.mensaje">
+
+    <input type="submit" value="Enviar">
+</form>

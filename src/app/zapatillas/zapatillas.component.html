@@ -1,0 +1,29 @@
+<h2>MI PROGRAMA{{titulo}}</h2>
+<p>Agregar marca</p>
+<input type="text" [(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()">
+<button (click)="addMarca()">Agregar marca</button>
+<p>{{mi_marca}}</p>
+<p>
+    Compra las mejores </p>
+    <ul>
+        <li *ngFor="let marca of marcas; let indice=index">{{indice + '-' +marca}}
+            <button (click)="borrarMarca(indice)">borrar</button>
+
+        </li>
+
+    </ul>
+
+<ul>
+    <li *ngFor="let deportiva of zapatillas">{{deportiva.nombre}}- <strong 
+        [class.altoPrecio]="deportiva.precio > 80"
+        [ngClass]="'fondoRojo'"
+        >{{deportiva.precio}}€</strong>
+<span *ngIf="deportiva.precio < 80"
+[style.background]="deportiva.precio < 80 ? 'green': 'trasnparent'"
+[style.color]="deportiva.precio < 80 ? 'white' : 'black'">
+ EN OFERTA!!
+</span>
+    </li>
+</ul>
+
+  
