@@ -69,3 +69,36 @@ $ npm install --global @angular/cli@stable
 $ npm install --global @angular/cli@next
 
 
+## Removing Node.js
+
+You can uninstall Node.js using apt or nvm, depending on the version you want to target. To remove the distro-stable version, you will need to work with the apt utility at the system level.
+
+To remove the distro-stable version, type the following:
+
+    `sudo apt remove nodejs`
+
+This command will remove the package and retain the configuration files. These may be of use to you if you intend to install the package again at a later point. If you don’t want to save the configuration files for later use, then run the following:
+
+   ` sudo apt purge nodejs`
+
+This will uninstall the package and remove the configuration files associated with it.
+
+As a final step, you can remove any unused packages that were automatically installed with the removed package:
+
+    sudo apt autoremove
+
+To uninstall a version of Node.js that you have enabled using nvm, first determine whether or not the version you would like to remove is the current active version:
+
+    nvm current
+
+If the version you are targeting is not the current active version, you can run:
+
+    nvm uninstall node_version
+
+This command will uninstall the selected version of Node.js.
+
+If the version you would like to remove is the current active version, you must first deactivate nvm to enable your changes:
+
+    nvm deactivate
+
+You can now uninstall the current version using the uninstall command above, which will remove all files associated with the targeted version of Node.js except the cached files that can be used for reinstallment. 
