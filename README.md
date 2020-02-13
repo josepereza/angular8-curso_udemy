@@ -75,11 +75,11 @@ You can uninstall Node.js using apt or nvm, depending on the version you want to
 
 To remove the distro-stable version, type the following:
 
-    `sudo apt remove nodejs`
+    sudo apt remove nodejs
 
 This command will remove the package and retain the configuration files. These may be of use to you if you intend to install the package again at a later point. If you don’t want to save the configuration files for later use, then run the following:
 
-   ` sudo apt purge nodejs`
+    sudo apt purge nodejs
 
 This will uninstall the package and remove the configuration files associated with it.
 
